@@ -31,7 +31,7 @@ To get started, you need to install a few dependencies:
 
 ## Project setup
 
-![Screenshot (785)](/projectsetup.png)
+
 
 ## Playwright Cucumber TypeScript
 
