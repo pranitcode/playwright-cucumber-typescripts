@@ -2,30 +2,26 @@
 
 This documentation provides a step-by-step guide on how to use Playwright with Cucumber in TypeScript. Playwright is a powerful automation tool for web browsers, and Cucumber is a popular tool for behavior-driven development (BDD). Together, they provide a robust framework for automating browser testing scenarios.
 
-
 - Table of Contents
   - Links
   - Installation
   - Project Setup
-  - Playwright cucucmber typescript
+  - Playwright Cucumber TypeScript
     - Writing Feature Files
     - Step Definitions
     - Running Tests
   - Additional Configuration
   - Conclusion
 
-## Links 
+## Links
 
- ### Playwright cucucmber typescript/Js  blog [Doc click me](https://medium.com/@manabie/how-to-use-playwright-in-cucumberjs-f8ee5b89bccc) 
+### Playwright Cucumber TypeScript/JS blog [Doc click me](https://medium.com/@manabie/how-to-use-playwright-in-cucumberjs-f8ee5b89bccc)
 
+### 1. Playwright [Doc click me](https://playwright.dev/docs/intro)
 
-### 1. Playwright  [Doc click me](https://playwright.dev/docs/intro) 
+### 2. Cucumber [Doc click me](https://ediblecode.com/blog/playwright-cucumber-js/)
 
-
-### 2. Cucumber [Doc click me](https://ediblecode.com/blog/playwright-cucumber-js/) 
-
-### 2. Typescript [Doc click me](https://www.typescriptlang.org/docs/) 
-
+### 3. TypeScript [Doc click me](https://www.typescriptlang.org/docs/)
 
 ## Installation
 
@@ -33,18 +29,17 @@ To get started, you need to install a few dependencies:
 
 .....NOT CREATED....................
 
-
 ## Project setup
 
 ![Screenshot (785)](/projectsetup.png)
 
-## Playwright cucumber typescript
+## Playwright Cucumber TypeScript
 
-#### playwright - Playwright is an automation framework that helps you automate web browser interactions for testing, scraping, or other purposes. It allows you to write code that controls web browsers, enabling you to perform actions like clicking buttons, filling forms, navigating pages, and capturing screenshots.
+#### Playwright - Playwright is an automation framework that helps you automate web browser interactions for testing, scraping, or other purposes. It allows you to write code that controls web browsers, enabling you to perform actions like clicking buttons, filling forms, navigating pages, and capturing screenshots.
 
 - Here's a short example using Playwright in JavaScript:
 
-```
+```javascript
 const { chromium } = require('playwright');
 
 async function runExample() {
@@ -63,14 +58,13 @@ async function runExample() {
 
   await browser.close();  // Close the browser
 }
-
 ```
 
-- cucucmber - Cucumber is a testing framework that supports behavior-driven development (BDD). It allows you to write test scenarios in a human-readable format that can be easily understood by both technical and non-technical stakeholders. Cucumber promotes collaboration between developers, testers, and business analysts to define and automate the behavior of an application.
+- Cucumber - Cucumber is a testing framework that supports behavior-driven development (BDD). It allows you to write test scenarios in a human-readable format that can be easily understood by both technical and non-technical stakeholders. Cucumber promotes collaboration between developers, testers, and business analysts to define and automate the behavior of an application.
 
 ## Here are the key components of Cucumber:
 
- - Feature Files: Cucumber tests are written in feature files using the Gherkin language. Feature files describe the desired behavior of the application in a structured format. They contain high-level scenarios written in a business-readable manner.
+- Feature Files: Cucumber tests are written in feature files using the Gherkin language. Feature files describe the desired behavior of the application in a structured format. They contain high-level scenarios written in a business-readable manner.
 
 - Gherkin Language: Gherkin is a domain-specific language used to write feature files. It uses a syntax that consists of Given, When, Then, And, and But steps to describe the behavior of the application in a declarative way. Gherkin allows stakeholders to define and discuss requirements using a common language.
 
@@ -82,11 +76,14 @@ async function runExample() {
 
 - Test Execution: Cucumber reads the feature files, matches the steps with their corresponding step definitions, and executes the automation code. The framework provides detailed reporting that highlights the progress and results of the tests.
 
-### Certainly! Let's dive into the meaning and usage of the keywords "Given," "When," "Then," and "Feature" in Cucumber's Gherkin syntax. 
+### Certainly! Let's dive into the meaning and usage of the keywords "Given," "When," "Then," and "Feature" in Cucumber's Gherkin syntax.
 
 #### Feature: Describes a high-level functionality or feature of the application being tested.
-#### Given: Specifies the initial context or preconditions for the test scenario.
-#### When: Defines the action or event that occurs during the test scenario.
-#### Then: Verifies the expected outcome or result of the test scenario.
-#### But: Provides an alternative path or exception to the expected outcome in the "Then" step.
 
+#### Given: Specifies the initial context or preconditions for the test scenario.
+
+#### When: Defines the action or event that occurs during the test scenario.
+
+#### Then: Verifies the expected outcome or result of the test scenario.
+
+#### But: Provides an alternative path or exception to the expected outcome in the "Then" step.
